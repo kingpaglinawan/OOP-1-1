@@ -12,7 +12,8 @@ txtfld.place(x=300, y=100)
 
 def click():
     value=txtfld.get()
-    txtfld2.insert(END,str(value))
+    txtfld2.delete(0,END)
+    txtfld2.insert(0, str(value))
 btn = Button(window, text = "Click to display your Fullname", fg="red", command=click)
 btn.place(x=80, y=150)
 
